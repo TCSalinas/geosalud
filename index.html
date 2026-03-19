@@ -15,7 +15,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
             <a class="navbar-brand fw-bold" href="#">
-                <img src="assets/logo.png" alt="Logo GeoCuidado" class="d-inline-block align-top me-2">
+                <img src="assets/logo.png" alt="Logo GeoCuidado" class="d-inline-block align-top me-2" height="40">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -25,6 +25,7 @@
                     <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="#estrategia">Estrategia</a></li>
                     <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
                 </ul>
                 <div class="ms-auto d-none d-lg-block border-start ps-4 ms-4">
                     <img src="assets/logopuente.png" alt="Puente Alto" height="35" style="filter: brightness(0) invert(1); opacity: 0.8;">
@@ -33,7 +34,6 @@
         </div>
     </nav>
 
-    
     <header id="inicio" class="hero-section d-flex align-items-center">
         <div class="container text-center">
             <div class="mb-4 d-flex flex-column align-items-center">
@@ -106,6 +106,125 @@
         </div>
     </section>
 
+
+
+    <section id="procesos" class="py-120 bg-soft">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-5">Apoyo a Macroprocesos Municipales</h2>
+            <div class="row g-4 text-start">
+                <div class="col-md-4">
+                    <div class="p-4 bg-white rounded shadow-sm h-100 border-top border-4 border-primary">
+                        <h5 class="fw-bold">1. Planificación de Infraestructura</h5>
+                        <p class="small text-muted">Apoyo a SECPLA en la decisión de ubicación de nuevos centros de salud basados en tendencias censales.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 bg-white rounded shadow-sm h-100 border-top border-4 border-primary">
+                        <h5 class="fw-bold">2. Gestión de Programas</h5>
+                        <p class="small text-muted">Optimización de los programas de apoyo al adulto mayor gestionados por DIDECO.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 bg-white rounded shadow-sm h-100 border-top border-4 border-primary">
+                        <h5 class="fw-bold">3. Monitoreo Sociodemográfico</h5>
+                        <p class="small text-muted">Seguimiento continuo de la evolución demográfica comunal para ajustes presupuestarios.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="analitica" class="py-120 bg-soft">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="pe-lg-5">
+                        <span class="badge bg-accent mb-2 text-dark">Data Science & Analytics</span>
+                        <h2 class="fw-bold mb-4">Transformación de Microdatos</h2>
+                        <p class="text-muted">Procesamos las variables críticas del Censo 2024 para modelar la demanda social y anticipar necesidades en Puente Alto:</p>
+                        
+                        <div class="d-flex align-items-start mb-4">
+                            <div class="icon-sm bg-white rounded-3 shadow-sm p-3 me-3">
+                                <i class="bi bi-person-check-fill text-accent fs-4"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold">Variable P02 & P16</h5>
+                                <p class="small text-muted mb-0">Cruces de edad y discapacidad para identificar clústeres de dependencia crítica (31,51% en la comuna).</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-start mb-4">
+                            <div class="icon-sm bg-white rounded-3 shadow-sm p-3 me-3">
+                                <i class="bi bi-graph-up-arrow text-accent fs-4"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold">Proyección de Demanda</h5>
+                                <p class="small text-muted mb-0"><strong>Estimación del 2% de crecimiento anual</strong> en la población con dependencia severa para la próxima década.</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-start mb-4">
+                            <div class="icon-sm bg-white rounded-3 shadow-sm p-3 me-3">
+                                <i class="bi bi-geo-fill text-accent fs-4"></i>
+                            </div>
+                            <div>
+                                <h5 class="fw-bold">Modelamiento Territorial</h5>
+                                <p class="small text-muted mb-0">Agregación a nivel de zona censal para proyectar la demanda de infraestructura de salud en Puente Alto.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="data-card bg-white p-4 rounded-4 shadow-lg border-start border-5 border-accent">
+                        <h6 class="fw-bold mb-4 text-center">Brecha de Discapacidad en Adultos Mayores (%)</h6>
+                        <div style="height: 300px;">
+                            <canvas id="healthChart"></canvas>
+                        </div>
+                        <p class="small text-muted italic mt-3 text-center">
+                            "La brecha regional y el <strong>crecimiento estimado del 2% anual</strong> justifican la priorización de recursos hacia cuidados domiciliarios en Puente Alto".
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="nosotros" class="py-120 bg-white">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-dark">Nuestro Equipo</h2>
+                <p class="text-muted">Expertos en la intersección de tecnología, procesos y analítica de datos</p>
+                <div class="underline mx-auto mb-5" style="width: 60px; height: 4px; background-color: var(--accent);"></div>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-3 text-center">
+                    <img src="assets/tomas.jpg" class="rounded-circle mb-3 shadow-lg member-img" alt="Tomás Salinas" width="160" height="160">
+                    <h5 class="fw-bold mb-1">Tomás Salinas</h5>
+                    <p class="text-accent fw-bold small text-uppercase mb-2">Encargado Analítica y Ciencia de Datos</p>
+                    <p class="small text-muted px-2">Especialista en procesamiento de microdatos censales (P02 y P16) y modelos predictivos de demanda.</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <img src="assets/alonso.jpg" class="rounded-circle mb-3 shadow-lg member-img" alt="Alonso Concha" width="160" height="160">
+                    <h5 class="fw-bold mb-1">Alonso Concha</h5>
+                    <p class="text-accent fw-bold small text-uppercase mb-2">ROL</p>
+                    <p class="small text-muted px-2">desglose de responsabilidades</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <img src="assets/agustina.jpg" class="rounded-circle mb-3 shadow-lg member-img" alt="Agustina Caneo" width="160" height="160">
+                    <h5 class="fw-bold mb-1">Agustina Caneo</h5>
+                    <p class="text-accent fw-bold small text-uppercase mb-2">ROL</p>
+                    <p class="small text-muted px-2">desglose de responsabilidades</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <img src="assets/valentina.jpg" class="rounded-circle mb-3 shadow-lg member-img" alt="Valentina Wang" width="160" height="160">
+                    <h5 class="fw-bold mb-1">Valentina Wang</h5>
+                    <p class="text-accent fw-bold small text-uppercase mb-2">ROL</p>
+                    <p class="small text-muted px-2">desglose de responsabilidades</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer class="py-5 text-center text-white bg-dark-blue">
         <div class="container">
             <img src="assets/logo.png" alt="GeoCuidado Consultores" height="80" class="mb-3 opacity-75">
@@ -113,6 +232,37 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const ctx = document.getElementById('healthChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Puente Alto', 'Región Metropolitana'],
+                datasets: [{
+                    label: '% Adultos Mayores con Discapacidad',
+                    data: [31.51, 30.09],
+                    backgroundColor: ['#00c094', '#102a43'],
+                    borderRadius: 8,
+                    barThickness: 60
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 40,
+                        ticks: { callback: function(value) { return value + "%" } }
+                    }
+                }
+            }
+        });
+    </script>
 </body>
 </html>
